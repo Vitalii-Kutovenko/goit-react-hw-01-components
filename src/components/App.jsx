@@ -1,8 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
 import user from './user.json';
+import data from './data.json';
 import Profile from './Profile/profile';
 import PropTypes from 'prop-types';
+import Statistics from './Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -11,6 +13,7 @@ export const App = () => {
         padding: 15,
         height: '100%',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -24,6 +27,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" stats={data}/>
     </div>
   );
 };
