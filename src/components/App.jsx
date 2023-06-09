@@ -1,5 +1,4 @@
 import React from 'react';
-import _ from 'lodash';
 import user from './user.json';
 import data from './data.json';
 import friends from './friends.json'
